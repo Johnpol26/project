@@ -78,3 +78,36 @@ body {
         opacity: 0;
     }
 }
+/* INTRO SECTION */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    z-index: 10;
+    position: relative;
+    color: white;
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.intro-text h2 {
+    font-size: 28px;
+    margin: 10px 0 0;
+    color: #a9d6e5; /* Optional: softer color for subtitle */
+}
+
+.intro-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+
+

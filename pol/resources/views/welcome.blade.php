@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="#">Home</a>
+        <a href= "{{ route('welcome')}}">Home</a>
         <a href="#">About Me</a>
         <a href="#">Contact</a>
     </div>
@@ -23,6 +23,18 @@
         <div class="cube" style="left: 80%; animation-delay: 10s;"></div>
         <div class="cube" style="left: 95%; animation-delay: 1s;"></div>
     </div>
+
+    <div class="intro">
+        <div class="intro-text">
+            <h1>Hi,</h1><br><br>
+            <h1> My name is John Pol Montalvo</h1><br><br>
+            <h1>Web Developer</h1>
+        </div>
+        <div class="intro-image">
+            <img src="{{ asset('css/pol.jpg') }}" alt="John Pol Montalvo">
+        </div>
+    </div>
+
 
 
 </body>
