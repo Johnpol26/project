@@ -3,8 +3,24 @@
 @section('title', 'Home')
 
 @section('content')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+
+    <script>
+        let currentIndex = 0;
+
+        function scrollProjects(direction) {
+            const container = document.getElementById("projectContainer");
+            const boxWidth = container.querySelector('.project-box').offsetWidth;
+            const totalProjects = container.children.length;
+            const maxIndex = Math.ceil(totalProjects / 3) - 1;
+
+            currentIndex += direction;
+
+            if (currentIndex < 0) currentIndex = 0;
+            if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+            container.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    </script>
 
     <div class="intro">
         <div class="intro-text">
@@ -27,7 +43,6 @@
             </button>
         </a>
 
-
         <span class="tech-icon">
             <i class="fab fa-html5" id="html"></i> Html
             <i class="fab fa-js" id="javascript"></i> JavaScript
@@ -36,28 +51,62 @@
         </span>
     </div>
 
-    <!-- My Projects Section -->
+        <!-- My Projects Section -->
     <div id="myprojects" class="my-projects-section">
         <h2 class="section-heading">MY PROJECTS</h2>
+        <div class="project-wrapper">
+            <button class="nav-btn left" onclick="scrollProjects(-1)">
+                &#10094;
+            </button>
 
-        <div class="project-container">
-            <div class="project-box">
-                <img src="{{ asset('css/sample-project.jpg') }}" alt="Project 1" class="project-image">
-                <h3 class="project-title">Project Title</h3>
-                <p class="project-description">A short description of what this project does or what it's about.</p>
+            <div class="project-container" id="projectContainer">
+                <div class="project-box">
+                    <img src="{{ asset('images/brand.jpg') }}" alt="Project 1" class="project-image">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                </div>
+
+                <div class="project-box">
+                    <img src="{{ asset('images/category.jpg') }}" alt="Project 2" class="project-image">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                </div>
+
+                <div class="project-box">
+                    <img src="{{ asset('images/product.jpg') }}" alt="Project 3" class="project-image">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                </div>
+
+                <div class="project-box">
+                    <img src="{{ asset('images/select-product.jpg') }}" alt="Project 4" class="project-image">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                </div>
+
+                <div class="project-box">
+                    <img src="{{ asset('images/account.jpg') }}" alt="Project 4" class="project-image">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                </div>
+
+                <div class="project-box">
+                    <img src="{{ asset('images/audit.jpg') }}" alt="Project 4" class="project-image">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                </div>
+
+                <div class="project-box">
+                    <img src="{{ asset('images/generatePDF.jpg') }}" alt="Project 4" class="project-image">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                </div>
             </div>
 
-            <div class="project-box">
-                <img src="{{ asset('css/sample-project.jpg') }}" alt="Project 2" class="project-image">
-                <h3 class="project-title">Project Title</h3>
-                <p class="project-description">A short description of what this project does or what it's about.</p>
-            </div>
-
-            <div class="project-box">
-                <img src="{{ asset('css/sample-project.jpg') }}" alt="Project 3" class="project-image">
-                <h3 class="project-title">Project Title</h3>
-                <p class="project-description">A short description of what this project does or what it's about.</p>
-            </div>
+            <button class="nav-btn right" onclick="scrollProjects(1)">
+                &#10095;
+            </button>
         </div>
     </div>
+
 @endsection
