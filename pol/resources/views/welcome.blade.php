@@ -1,8 +1,11 @@
 @extends('layout.app')
 
-@section('title', 'Welcome')
+@section('title', 'Home')
 
 @section('content')
+
+    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+
     <div class="background-cubes">
         <div class="cube" style="left: 5%; animation-delay: 0s;"></div>
         <div class="cube" style="left: 20%; animation-delay: 4s;"></div>
