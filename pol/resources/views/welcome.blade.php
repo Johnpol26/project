@@ -5,20 +5,13 @@
 @section('content')
 
     <script>
-        let currentIndex = 0;
-
         function scrollProjects(direction) {
-            const container = document.getElementById("projectContainer");
-            const boxWidth = container.querySelector('.project-box').offsetWidth;
-            const totalProjects = container.children.length;
-            const maxIndex = Math.ceil(totalProjects / 3) - 1;
-
-            currentIndex += direction;
-
-            if (currentIndex < 0) currentIndex = 0;
-            if (currentIndex > maxIndex) currentIndex = maxIndex;
-
-            container.style.transform = `translateX(-${currentIndex * 100}%)`;
+            const container = document.getElementById('projectContainer');
+            const scrollAmount = container.clientWidth * 0.9; // Scroll by 90% of the container width
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
         }
     </script>
 
@@ -54,10 +47,9 @@
         <!-- My Projects Section -->
     <div id="myprojects" class="my-projects-section">
         <h2 class="section-heading">MY PROJECTS</h2>
+
         <div class="project-wrapper">
-            <button class="nav-btn left" onclick="scrollProjects(-1)">
-                &#10094;
-            </button>
+            <button class="nav-btn left" onclick="scrollProjects(-1)">&#10094;</button>
 
             <div class="project-container" id="projectContainer">
                 <div class="project-box">
@@ -103,9 +95,8 @@
                 </div>
             </div>
 
-            <button class="nav-btn right" onclick="scrollProjects(1)">
-                &#10095;
-            </button>
+            <button class="nav-btn right" onclick="scrollProjects(1)"> &#10095;</button>
+
         </div>
     </div>
 
