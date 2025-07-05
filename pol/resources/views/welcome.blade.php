@@ -20,10 +20,20 @@
         </div>
     </div>
 
-    <div class="btn-wrapper">
-        <button class="btn-proj">
-            <i class="fas fa-folder-open"></i> My Project
-        </button>
+    <div class="btn-wrapper" style="display: flex; align-items: center; gap: 10px;">
+        <a href="#myprojects" style="text-decoration: none;">
+            <button class="btn-proj">
+                <i class="fas fa-folder-open"></i> My Project
+            </button>
+        </a>
+
+
+        <span class="tech-icon">
+            <i class="fab fa-html5" id="html"></i> Html
+            <i class="fab fa-js" id="javascript"></i> JavaScript
+            <i class="fab fa-css3-alt" id="css"></i> CSS
+            <i class="fab fa-php" id="php"></i> PHP
+        </span>
     </div>
 
     <!-- My Projects Section -->

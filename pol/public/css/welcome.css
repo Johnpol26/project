@@ -236,6 +236,63 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+#html {
+    font-size: 24px;
+    color: #eb5537;
+    border: 2px solid #eb5537;
+    border-radius: 6px;
+    padding: 6px;
+    transition: 0.3s;
+}
+
+#html:hover {
+    background-color: #eb5537;
+    color: white;
+}
+
+#css {
+    font-size: 24px;
+    color: #2965f1;
+    border: 2px solid #2965f1;
+    border-radius: 6px;
+    padding: 6px;
+    transition: 0.3s;
+}
+
+#css:hover {
+    background-color: #2965f1;
+    color: white;
+}
+
+#javascript {
+    font-size: 24px;
+    color: #f7df1e;
+    border: 2px solid #f7df1e;
+    border-radius: 6px;
+    padding: 6px;
+    transition: 0.3s;
+}
+
+#javascript:hover {
+    background-color: #f7df1e;
+    color: white;
+}
+
+#php {
+    font-size: 24px;
+    color: #777bb3;
+    border: 2px solid #777bb3;
+    border-radius: 6px;
+    padding: 6px;
+    transition: 0.3s;
+}
+
+#php:hover {
+    background-color: #777bb3;
+    color: white;
+}
+
+
 
 
 
