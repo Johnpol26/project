@@ -51,7 +51,7 @@
     height: 100%;
     z-index: -1; /* Behind everything */
     overflow: hidden;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: radial-gradient(circle at center, #1b2735, #090a0f);
 }
 
 .cube {
