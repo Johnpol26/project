@@ -2,5 +2,5 @@
 <div class="navbar">
     <a href="{{ route('welcome') }}">Home</a>
     <a href="#myprojects">My Projects</a> <!-- Change to anchor link -->
-    <a href="#">Contact</a>
+    <a href="#contact">Contact</a>
 </div>
