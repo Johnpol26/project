@@ -44,7 +44,7 @@
             </p>
         </div>
         <div class="intro-image">
-            <img src="{{ asset('css/pol.jpg') }}" alt="John Pol Montalvo">
+            <img src="{{ asset('images/profile.jpg') }}" alt="John Pol Montalvo">
         </div>
     </div>
 
