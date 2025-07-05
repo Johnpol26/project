@@ -8,6 +8,7 @@
     justify-content: center;      /* Horizontally center the links */
     align-items: center;
     z-index: 1000;
+    /* backdrop-filter: blur(8px); */
     padding: 10px 0;              /* Optional padding */
 }
 

@@ -10,6 +10,7 @@
     <title>@yield('title', 'Welcome')</title>
 </head>
 <body>
+
     <div class="background-cubes">
         <div class="cube" style="left: 5%; animation-delay: 0s;"></div>
         <div class="cube" style="left: 20%; animation-delay: 4s;"></div>
