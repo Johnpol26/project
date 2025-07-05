@@ -191,6 +191,7 @@
 }
 
 .section-heading {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 28px;
     margin-bottom: 20px;
     color: white;
@@ -209,7 +210,7 @@
     display: flex;
     overflow-x: auto; /* enable horizontal scroll */
     scroll-behavior: smooth;
-    gap: 12px;
+    gap: 15px;
     padding: 5px;
 
     /* Hide scrollbar - cross browser */
@@ -223,28 +224,36 @@
 
 .project-box {
     flex: 0 0 auto;
-    width: 220px; /* reduced from 300px */
+    height: 45vh;
+    width: 300px; /* increased from 220px */
     background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 12px;
+    padding: 16px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* optional: add depth */
+    transition: transform 0.3s;
+}
+
+.project-box:hover {
+    transform: scale(1.03); /* subtle hover effect */
 }
 
 .project-box img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
-    margin-bottom: 8px;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
 .project-title {
-    font-size: 16px;
-    margin: 4px 0;
+    color: #ccc;
+    font-size: 18px; /* increased */
+    margin: 6px 0;
 }
 
 .project-description {
-    font-size: 13px;
+    font-size: 14px; /* slightly larger */
     color: #ccc;
 }
 
@@ -252,7 +261,7 @@
     background: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
     padding: 6px 10px;
     cursor: pointer;
     z-index: 2;

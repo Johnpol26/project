@@ -55,43 +55,43 @@
                 <div class="project-box">
                     <img src="{{ asset('images/brand.jpg') }}" alt="Project 1" class="project-image">
                     <h3 class="project-title">Inventory Management System</h3>
-                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                    <p class="project-description">In this section, you can add a brand along with its type and code. You can also edit existing entries to update the brand details or delete them if needed.</p>
                 </div>
 
                 <div class="project-box">
                     <img src="{{ asset('images/category.jpg') }}" alt="Project 2" class="project-image">
                     <h3 class="project-title">Inventory Management System</h3>
-                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                    <p class="project-description">In this section, you can add a category along with its type and code. You can also edit existing categories or delete them as needed.</p>
                 </div>
 
                 <div class="project-box">
                     <img src="{{ asset('images/product.jpg') }}" alt="Project 3" class="project-image">
                     <h3 class="project-title">Inventory Management System</h3>
-                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                    <p class="project-description">In this section, you can add a product along with its type and code. You can also edit existing products or delete them as needed.</p>
                 </div>
 
                 <div class="project-box">
                     <img src="{{ asset('images/select-product.jpg') }}" alt="Project 4" class="project-image">
                     <h3 class="project-title">Inventory Management System</h3>
-                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                    <p class="project-description">In this section, you can select a brand and category, then add a product along with its code, quantity, and price. You can also edit or delete existing products as needed.</p>
                 </div>
 
                 <div class="project-box">
                     <img src="{{ asset('images/account.jpg') }}" alt="Project 4" class="project-image">
                     <h3 class="project-title">Inventory Management System</h3>
-                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                    <p class="project-description">In this section, you can view your account details, edit your information, and change your password.</p>
                 </div>
 
                 <div class="project-box">
                     <img src="{{ asset('images/audit.jpg') }}" alt="Project 4" class="project-image">
                     <h3 class="project-title">Inventory Management System</h3>
-                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                    <p class="project-description">In this section, you can view user activity and see what actions they have performed.</p>
                 </div>
 
                 <div class="project-box">
                     <img src="{{ asset('images/generatePDF.jpg') }}" alt="Project 4" class="project-image">
                     <h3 class="project-title">Inventory Management System</h3>
-                    <p class="project-description">A short description of what this project does or what it's about.</p>
+                    <p class="project-description">In this section, you can generate a PDF file, and the same functionality is also available in other modules."</p>
                 </div>
             </div>
 
