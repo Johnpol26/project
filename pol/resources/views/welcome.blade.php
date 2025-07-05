@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
     <title>Welcome</title>
 </head>
@@ -26,16 +27,14 @@
 
     <div class="intro">
         <div class="intro-text">
-            <h1>Hi,</h1><br><br>
-            <h1> My name is John Pol Montalvo</h1><br><br>
-            <h1>Web Developer</h1>
+            <h1 class="hi">Hi,</h1><br>
+            <h1 class="myname"> My name is John Pol Montalvo</h1><br><br>
+            <h1 class="webdev">Web Developer</h1>
         </div>
         <div class="intro-image">
             <img src="{{ asset('css/pol.jpg') }}" alt="John Pol Montalvo">
         </div>
     </div>
-
-
 
 </body>
 </html>

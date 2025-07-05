@@ -89,25 +89,60 @@ body {
     color: white;
 }
 
-.intro-text h1 {
+.intro-text {
+    padding: 20px;
+    border: 3px solid #444;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow:
+        4px 4px 10px #d3d2d2,
+        -4px -4px 10px #dad5d5;
+    transition: transform 0.3s ease; /* smooth movement */
+}
+
+.intro-text:hover {
+    transform: translateY(-10px) scale(1.03); /* moves up + slightly enlarges */
+}
+
+.hi {
     font-size: 36px;
     margin: 0;
 }
 
-.intro-text h2 {
-    font-size: 28px;
-    margin: 10px 0 0;
-    color: #a9d6e5; /* Optional: softer color for subtitle */
+.myname {
+    font-size: 36px;
+    margin: 0;
+}
+
+.webdev {
+    font-size: 36px;
+    margin: 0;
+    color: white;
+    transition: text-shadow 0.3s ease;
+}
+
+.webdev:hover {
+    text-shadow:
+        0 0 5px #13c0cc,
+        0 0 10px #13c0cc,
+        0 0 20px #13c0cc,
+        0 0 40px #13c0cc;
 }
 
 .intro-image img {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #fff;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease; /* Smooth transition */
 }
+
+.intro-image img:hover {
+    transform: translateY(-10px) scale(1.05); /* Moves image up and scales it */
+}
+
 
 
 
