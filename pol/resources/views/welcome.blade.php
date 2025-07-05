@@ -115,7 +115,6 @@
             </div>
 
             <button class="nav-btn right" onclick="scrollProjects(1)"> &#10095;</button>
-
         </div>
     </div>
 
@@ -127,7 +126,6 @@
     <!-- My Contact Section -->
     <div id="contact" class="my-projects-section">
         <h2 class="section-heading">MY CONTACT</h2>
-
         <div class="center-container">
             <div class="contact-wrapper">
                 <form class="contact-form">
@@ -151,25 +149,23 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
                     </div>
-
                     <button type="submit" class="btn-submit">Send Message</button>
                 </form>
             </div>
         </div>
-        <!-- Contact Buttons with Icons and Border -->
-        <div class="box-contact">
-            <div class="contact-buttons-with-border">
-                <a href="tel:+1234567890" class="contact-icon call">
-                    <i class="fas fa-phone"></i> Call
-                </a>
-                <a href="https://www.facebook.com/potatos.pol" target="_blank" class="contact-icon facebook">
-                    <i class="fab fa-facebook-f"></i> Facebook
-                </a>
-                <a href="https://www.instagram.com/yourprofile" target="_blank" class="contact-icon instagram">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
-            </div>
+                <!-- Contact Buttons with Icons and Border -->
+        <div class="contact-buttons-with-border">
+            <a href="tel:+1234567890" class="contact-icon call">
+                <i class="fas fa-phone"></i> <span>Call</span>
+            </a>
+            <a href="https://www.facebook.com/yourpage" target="_blank" class="contact-icon facebook">
+                <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" class="contact-icon instagram">
+                <i class="fab fa-instagram"></i> <span>Instagram</span>
+            </a>
         </div>
+
     </div>
 
 @endsection
