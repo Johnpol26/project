@@ -26,14 +26,28 @@
         </button>
     </div>
 
-    <div class="project-container" id="myprojects">
-        <div class="project-box">
-            <img src="{{ asset('css/sample-project.jpg') }}" alt="Project 1" class="project-image">
-            <h3 class="project-title">Project Title</h3>
-            <p class="project-description">A short description of what this project does or what it's about.</p>
+    <!-- My Projects Section -->
+    <div id="myprojects" class="my-projects-section">
+        <h2 class="section-heading">MY PROJECTS</h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <img src="{{ asset('css/sample-project.jpg') }}" alt="Project 1" class="project-image">
+                <h3 class="project-title">Project Title</h3>
+                <p class="project-description">A short description of what this project does or what it's about.</p>
+            </div>
+
+            <div class="project-box">
+                <img src="{{ asset('css/sample-project.jpg') }}" alt="Project 2" class="project-image">
+                <h3 class="project-title">Project Title</h3>
+                <p class="project-description">A short description of what this project does or what it's about.</p>
+            </div>
+
+            <div class="project-box">
+                <img src="{{ asset('css/sample-project.jpg') }}" alt="Project 3" class="project-image">
+                <h3 class="project-title">Project Title</h3>
+                <p class="project-description">A short description of what this project does or what it's about.</p>
+            </div>
         </div>
     </div>
-
-    <div style="height: 1500px;"></div> <!-- This forces vertical overflow for demo -->
-
 @endsection
