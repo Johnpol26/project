@@ -4,10 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 10%;
+    padding: 0px 10%;
     z-index: 10;
     position: relative;
     color: white;
+    padding-top: 20vh;
 }
 
 .intro-text {
@@ -96,6 +97,58 @@
 .intro-image img:hover {
     transform: translateY(-10px) scale(1.05);
 }
+
+.btn-wrapper {
+    text-align: left;       /* Align to the left */
+    margin: 0px 10%;       /* Match the horizontal padding of .intro */
+    padding-top: 10px;
+    padding-bottom: 18vh;
+
+}
+
+.btn-proj {
+    background: linear-gradient(135deg, #4e9af1, #3467d6);  /* Gradient blue */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-proj::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 150%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: skewX(-25deg);
+    transition: 0.5s;
+}
+
+.btn-proj:hover::before {
+    left: 100%;
+}
+
+.btn-proj:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.btn-proj i {
+    margin-right: 8px;
+}
+
+
+
 
 
 

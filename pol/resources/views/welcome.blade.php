@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
 
     <div class="intro">
@@ -20,6 +20,12 @@
         </div>
     </div>
 
+    <div class="btn-wrapper">
+        <button class="btn-proj">
+            <i class="fas fa-folder-open"></i> My Project
+        </button>
+    </div>
+
         <!-- Add this somewhere below your intro section -->
     <div id="myprojects" class="my-projects-section">
         <h2>My Projects</h2>
@@ -27,10 +33,6 @@
         <!-- Add your project cards or items here -->
     </div>
 
-
-        <div style="height: 1500px;"></div> <!-- This forces vertical overflow for demo -->
-
-
-
+    <div style="height: 1500px;"></div> <!-- This forces vertical overflow for demo -->
 
 @endsection
