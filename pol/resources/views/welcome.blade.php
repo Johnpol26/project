@@ -26,11 +26,12 @@
         </button>
     </div>
 
-        <!-- Add this somewhere below your intro section -->
-    <div id="myprojects" class="my-projects-section">
-        <h2>My Projects</h2>
-        <p>Here are some of my awesome web projects!</p>
-        <!-- Add your project cards or items here -->
+    <div class="project-container" id="myprojects">
+        <div class="project-box">
+            <img src="{{ asset('css/sample-project.jpg') }}" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project Title</h3>
+            <p class="project-description">A short description of what this project does or what it's about.</p>
+        </div>
     </div>
 
     <div style="height: 1500px;"></div> <!-- This forces vertical overflow for demo -->
