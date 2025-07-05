@@ -13,6 +13,25 @@
                 behavior: 'smooth'
             });
         }
+
+        // Wait for DOM to be ready before attaching image click listeners
+        document.addEventListener('DOMContentLoaded', function () {
+            // Open modal when an image is clicked
+            document.querySelectorAll('.project-image').forEach(img => {
+                img.addEventListener('click', function () {
+                    document.getElementById('imageModal').style.display = "block";
+                    document.getElementById('modalImage').src = this.src;
+                });
+            });
+        });
+
+        // Optional: close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     </script>
 
     <div class="intro">
@@ -98,6 +117,11 @@
             <button class="nav-btn right" onclick="scrollProjects(1)"> &#10095;</button>
 
         </div>
+    </div>
+
+        <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <img class="modal-content" id="modalImage">
     </div>
 
 @endsection
