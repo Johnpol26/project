@@ -19,4 +19,18 @@
             <img src="{{ asset('css/pol.jpg') }}" alt="John Pol Montalvo">
         </div>
     </div>
+
+        <!-- Add this somewhere below your intro section -->
+    <div id="myprojects" class="my-projects-section">
+        <h2>My Projects</h2>
+        <p>Here are some of my awesome web projects!</p>
+        <!-- Add your project cards or items here -->
+    </div>
+
+
+        <div style="height: 1500px;"></div> <!-- This forces vertical overflow for demo -->
+
+
+
+
 @endsection

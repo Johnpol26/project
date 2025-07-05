@@ -1,8 +1,14 @@
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;                  /* Make it span full width */
     background: transparent;
     display: flex;
-    justify-content: center;
+    justify-content: center;      /* Horizontally center the links */
     align-items: center;
+    z-index: 1000;
+    padding: 10px 0;              /* Optional padding */
 }
 
 .navbar a {
@@ -77,4 +83,6 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
     height: 100vh;
+    overflow-y: auto; /* Enable vertical scrollbar when needed */
+    scroll-behavior: smooth;
 }
