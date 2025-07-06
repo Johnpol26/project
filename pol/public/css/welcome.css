@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 /* INTRO SECTION */
 .intro {
@@ -614,6 +617,7 @@
 }
 
 .contact-section h3 {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 28px;
     margin-bottom: 40px;

@@ -34,7 +34,7 @@
         }
     </script>
 
-    <div class="intro">
+    <div id="home" class="intro">
         <div class="intro-text">
             <h1 class="hi">Hi,</h1><br>
             <h1 class="myname"> My name is John Pol Montalvo</h1><br>
@@ -49,6 +49,7 @@
     </div>
 
     <div class="btn-wrapper" style="display: flex; align-items: center; gap: 10px;">
+
         <a href="#myprojects" style="text-decoration: none;">
             <button class="btn-proj">
                 <i class="fas fa-folder-open"></i> My Project
@@ -139,6 +140,11 @@
             <div class="card">
                 <a href="https://facebook.com/yourprofile" target="_blank">
                     <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/Johnpol26" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
             <div class="card">
