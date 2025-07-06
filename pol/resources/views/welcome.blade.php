@@ -123,30 +123,30 @@
         <img class="modal-content" id="modalImage">
     </div>
 
-    <!-- My Contact Section -->
-    <div class="contact-details" id="contact" >
+        <!-- Contact Section -->
+    <div class="contact-section" id="contact">
         <h3>Get in Touch</h3>
-        <ul>
-            <li><i class="fas fa-user"></i>John Pol Bornales Montalvo</li>
-            <li><i class="fas fa-phone-alt"></i> +639205391023</li>
-            <li><i class="fas fa-envelope"></i> johnpolbmontalvo@gmail.com</li>
-            <li><i class="fas fa-map-marker-alt"></i> Rodriguez Rizal, Philippines</li>
-            <li>
+        <div class="contact-cards">
+            <div class="card"><i class="fas fa-user"></i> John Pol Bornales Montalvo</div>
+            <div class="card"><i class="fas fa-phone-alt"></i> +639205391023</div>
+            <div class="card"><i class="fas fa-envelope"></i> johnpolbmontalvo@gmail.com</div>
+            <div class="card"><i class="fas fa-map-marker-alt"></i> Rodriguez Rizal, Philippines</div>
+            <div class="card">
                 <a href="{{ asset('resume.pdf') }}" download>
                     <i class="fas fa-file-download"></i> Resume/CV
                 </a>
-            </li>
-            <li>
+            </div>
+            <div class="card">
                 <a href="https://facebook.com/yourprofile" target="_blank">
                     <i class="fab fa-facebook"></i> Facebook
                 </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+            </div>
+            <div class="card">
+                <a href="https://www.linkedin.com/in/" target="_blank">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 
     <div class="contact-buttons-with-border">
