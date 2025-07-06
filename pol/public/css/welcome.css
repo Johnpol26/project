@@ -16,52 +16,87 @@ html {
 
 .intro-text {
     position: relative;
-    padding: 20px;
-    border-radius: 30px; /* More curve */
+    padding: 25px 30px;
+    border-radius: 20px;
     background: transparent;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.intro-text::before {
+.intro-text {
+    position: relative;
+    padding: 25px 30px;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.intro-text:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Glowing corner lights */
+.intro-text::before,
+.intro-text::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 3px;
-    border-radius: inherit;
-    background: linear-gradient(270deg, #ff6ec4, #7873f5, #3ee9f5, #ff6ec4);
-    background-size: 600% 600%;
-    animation: animatedBorder 6s linear infinite;
-    z-index: -1;
-    mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-
-    filter: blur(1.2px); /* Optional: smooth the border edge */
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(circle, #ff6ec4 40%, transparent 70%);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 2;
 }
 
-@keyframes animatedBorder {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+/* Top-left corner */
+.intro-text::before {
+    top: -8px;
+    left: -8px;
+    border-top-left-radius: 20px;
+}
+
+/* Bottom-right corner */
+.intro-text::after {
+    bottom: -8px;
+    right: -8px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Add extra spans for the remaining corners if needed */
+.intro-text .corner-glow {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(circle, #3ee9f5 40%, transparent 70%);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.intro-text .top-right {
+    top: -8px;
+    right: -8px;
+    border-top-right-radius: 20px;
+}
+
+.intro-text .bottom-left {
+    bottom: -8px;
+    left: -8px;
+    border-bottom-left-radius: 20px;
 }
 
 .intro-text:hover {
@@ -131,13 +166,33 @@ html {
     object-fit: cover;
     border: 4px solid #fff;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s ease;
     display: block;
     margin: 0 auto; /* center in container */
+
+    /* Fade-in animation */
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.5s;
 }
 
-.intro-image img:hover {
+.intro-image {
+    transition: transform 0.3s ease; /* This makes it smooth */
+}
+
+.intro-image:hover {
     transform: translateY(-10px) scale(1.05);
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .btn-wrapper {

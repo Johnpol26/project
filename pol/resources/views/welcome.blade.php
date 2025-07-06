@@ -42,6 +42,8 @@
             <p class="intro-description">
                 A web developer who builds clean, responsive websites with purpose.
             </p>
+            <span class="corner-glow top-right"></span>
+            <span class="corner-glow bottom-left"></span>
         </div>
         <div class="intro-image">
             <img src="{{ asset('images/profile.jpg') }}" alt="John Pol Montalvo">
