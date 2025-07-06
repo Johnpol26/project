@@ -27,6 +27,8 @@ html {
     z-index: 1;
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
 }
 
 .intro-text {
@@ -176,7 +178,10 @@ html {
 }
 
 .intro-image {
-    transition: transform 0.3s ease; /* This makes it smooth */
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto; /* center the image */
+    transition: transform 0.3s ease;
 }
 
 .intro-image:hover {
@@ -204,7 +209,7 @@ html {
 }
 
 .btn-proj {
-    background: linear-gradient(135deg, #4e9af1, #3467d6);  /* Gradient blue */
+    background: linear-gradient(135deg, #4e9af1, #3467d6);
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -217,6 +222,12 @@ html {
     letter-spacing: 0.5px;
     position: relative;
     overflow: hidden;
+
+    /* Animation like slideInUp */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
 .btn-proj::before {
@@ -290,6 +301,8 @@ html {
     padding: 20px;
     text-align: center;
     font-size: 15px;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
     box-shadow:
         0 8px 16px rgba(0, 0, 0, 0.25),
         0 4px 6px rgba(0, 0, 0, 0.1);
@@ -341,6 +354,8 @@ html {
     border-radius: 12px;
     margin-bottom: 16px;
     transition: transform 0.3s ease;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
 }
 
 .project-box:hover img {
@@ -360,7 +375,6 @@ html {
     margin-bottom: 12px;
 }
 
-
 .project-box img {
     width: 100%;
     height: 180px; /* set your fixed height */
@@ -378,6 +392,8 @@ html {
 .project-description {
     font-size: 14px; /* slightly larger */
     color: #ccc;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
 }
 
 @media (max-width: 768px) {
@@ -436,11 +452,21 @@ html {
     border-radius: 6px;
     padding: 6px;
     transition: 0.3s;
+        /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
 #html:hover {
     background-color: #eb5537;
     color: white;
+}
+
+.html-text {
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
 }
 
 #css {
@@ -450,11 +476,21 @@ html {
     border-radius: 6px;
     padding: 6px;
     transition: 0.3s;
+        /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
 #css:hover {
     background-color: #2965f1;
     color: white;
+}
+
+.css-text {
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
 }
 
 #javascript {
@@ -464,11 +500,21 @@ html {
     border-radius: 6px;
     padding: 6px;
     transition: 0.3s;
+        /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
 #javascript:hover {
     background-color: #f7df1e;
     color: white;
+}
+
+.javascript-text {
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
 }
 
 #php {
@@ -478,11 +524,55 @@ html {
     border-radius: 6px;
     padding: 6px;
     transition: 0.3s;
+        /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
 #php:hover {
     background-color: #777bb3;
     color: white;
+}
+
+.php-text {
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
+}
+
+#laravel {
+    font-size: 24px;
+    color: #ff2d20;
+    border: 2px solid #ff2d20;
+    border-radius: 6px;
+    padding: 6px;
+    transition: 0.3s;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Hover effect */
+#laravel:hover {
+    background-color: #ff2d20;
+    color: white;
+}
+
+.laravel-text {
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.0s;
+}
+
+/* Animation keyframes */
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .modal {
@@ -533,6 +623,9 @@ html {
     position: relative;
     overflow: hidden; /* hides the animation outside the box */
     color: #fff;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.2s;
 }
 
 .contact-buttons-with-border::before,
@@ -621,6 +714,7 @@ html {
     }
 }
 
+/* Contact Section Container */
 .contact-section {
     position: relative;
     max-width: 1100px;
@@ -632,9 +726,12 @@ html {
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.2s;
 }
 
-/* Add animated borders using pseudo-elements */
+/* Animated Border Glow */
 .contact-section::before,
 .contact-section::after {
     content: '';
@@ -655,7 +752,7 @@ html {
     border-color: #00c6ff;
 }
 
-/* Keyframe for border glow effect */
+/* Glow Animation */
 @keyframes border-glow {
     0% {
         transform: scale(1);
@@ -671,6 +768,18 @@ html {
     }
 }
 
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .contact-section h3 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -679,12 +788,14 @@ html {
     color: #ffffffdd;
 }
 
+/* Contact Cards Grid */
 .contact-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 20px;
 }
 
+/* Individual Card Styles with Animation */
 .contact-cards .card {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -696,7 +807,19 @@ html {
     transition: all 0.3s ease;
     backdrop-filter: blur(6px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
 }
+
+/* Staggered Delays */
+.contact-cards .card:nth-child(1) { animation-delay: 0.1s; }
+.contact-cards .card:nth-child(2) { animation-delay: 0.2s; }
+.contact-cards .card:nth-child(3) { animation-delay: 0.3s; }
+.contact-cards .card:nth-child(4) { animation-delay: 0.4s; }
+.contact-cards .card:nth-child(5) { animation-delay: 0.5s; }
+.contact-cards .card:nth-child(6) { animation-delay: 0.6s; }
+.contact-cards .card:nth-child(7) { animation-delay: 0.7s; }
+.contact-cards .card:nth-child(8) { animation-delay: 0.8s; }
 
 .contact-cards .card:hover {
     background: rgba(255, 255, 255, 0.2);
@@ -717,6 +840,7 @@ html {
 .contact-cards .card a:hover {
     color: #00acee;
 }
+
 
 
 

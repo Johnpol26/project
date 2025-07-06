@@ -51,18 +51,17 @@
     </div>
 
     <div class="btn-wrapper" style="display: flex; align-items: center; gap: 10px;">
-
         <a href="#myprojects" style="text-decoration: none;">
             <button class="btn-proj">
                 <i class="fas fa-folder-open"></i> My Project
             </button>
         </a>
-
         <span class="tech-icon">
-            <i class="fab fa-html5" id="html"></i> Html
-            <i class="fab fa-js" id="javascript"></i> JavaScript
-            <i class="fab fa-css3-alt" id="css"></i> CSS
-            <i class="fab fa-php" id="php"></i> PHP
+            <i class="fab fa-html5" id="html"></i> <span class="html-text">HTML</span>
+            <i class="fab fa-js" id="javascript"></i> <span class="javascript-text">JavaScript</span>
+            <i class="fab fa-css3-alt" id="css"></i> <span class="css-text">CSS</span>
+            <i class="fab fa-php" id="php"></i> <span class="php-text">PHP</span>
+            <i class="fas fa-laravel" id="laravel"></i> <span class="laravel-text">Laravel</span>
         </span>
     </div>
 
