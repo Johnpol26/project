@@ -124,48 +124,41 @@
     </div>
 
     <!-- My Contact Section -->
-    <div id="contact" class="my-projects-section">
-        <h2 class="section-heading">MY CONTACT</h2>
-        <div class="center-container">
-            <div class="contact-wrapper">
-                <form class="contact-form">
-                    @csrf
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                    </div>
+    <div class="contact-details" id="contact" >
+        <h3>Get in Touch</h3>
+        <ul>
+            <li><i class="fas fa-user"></i>John Pol Bornales Montalvo</li>
+            <li><i class="fas fa-phone-alt"></i> +639205391023</li>
+            <li><i class="fas fa-envelope"></i> johnpolbmontalvo@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Rodriguez Rizal, Philippines</li>
+            <li>
+                <a href="{{ asset('resume.pdf') }}" download>
+                    <i class="fas fa-file-download"></i> Resume/CV
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com/yourprofile" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+        </ul>
+    </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Your Email">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Subject">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-                <!-- Contact Buttons with Icons and Border -->
-        <div class="contact-buttons-with-border">
-            <a href="tel:+1234567890" class="contact-icon call">
-                <i class="fas fa-phone"></i> <span>Call</span>
-            </a>
-            <a href="https://www.facebook.com/yourpage" target="_blank" class="contact-icon facebook">
-                <i class="fab fa-facebook-f"></i> <span>Facebook</span>
-            </a>
-            <a href="https://www.instagram.com/yourprofile" target="_blank" class="contact-icon instagram">
-                <i class="fab fa-instagram"></i> <span>Instagram</span>
-            </a>
-        </div>
-
+    <div class="contact-buttons-with-border">
+        <a href="tel:+1234567890" class="contact-icon call">
+            <i class="fas fa-phone"></i> <span>Call</span>
+        </a>
+        <a href="https://www.facebook.com/yourpage" target="_blank" class="contact-icon facebook">
+            <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/ciddd_00/" target="_blank" class="contact-icon instagram">
+            <i class="fab fa-instagram"></i> <span>Instagram</span>
+        </a>
     </div>
 
 @endsection
