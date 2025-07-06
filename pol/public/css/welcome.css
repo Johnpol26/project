@@ -226,8 +226,8 @@
 .project-box {
     flex: 0 0 auto;
     height: 45vh;
-    width: 300px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    width: 80vw; /* relative to viewport width */
+    max-width: 300px; /* limit maximum size on larger screens */    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -320,6 +320,33 @@
 .project-description {
     font-size: 14px; /* slightly larger */
     color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .project-box {
+        width: 85vw;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .project-box img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-box {
+        width: 90vw;
+        padding: 16px;
+    }
+
+    .project-box h3 {
+        font-size: 1rem;
+    }
+
+    .project-box p {
+        font-size: 0.85rem;
+    }
 }
 
 .nav-btn {
