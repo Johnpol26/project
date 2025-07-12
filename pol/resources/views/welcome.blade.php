@@ -139,7 +139,7 @@
                 </a>
             </div>
             <div class="card">
-                <a href="https://facebook.com/yourprofile" target="_blank">
+                <a href="https://www.facebook.com/potatos.pol" target="_blank">
                     <i class="fab fa-facebook"></i> Facebook
                 </a>
             </div>
@@ -160,7 +160,7 @@
         <a href="tel:+1234567890" class="contact-icon call">
             <i class="fas fa-phone"></i> <span>Call</span>
         </a>
-        <a href="https://www.facebook.com/yourpage" target="_blank" class="contact-icon facebook">
+        <a href="https://www.facebook.com/potatos.pol" target="_blank" class="contact-icon facebook">
             <i class="fab fa-facebook-f"></i> <span>Facebook</span>
         </a>
         <a href="https://www.instagram.com/ciddd_00/" target="_blank" class="contact-icon instagram">
